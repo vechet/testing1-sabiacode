@@ -60,88 +60,112 @@ export const listDatas = [
     title: "abcdefu",
     description: "GAYLE",
     imageUrl:
-      "https://helpx.adobe.com/content/dam/help/en/photoshop/using/convert-color-image-black-white/jcr_content/main-pars/before_and_after/image-before/Landscape-Color.jpg",
-
+      "https://i.scdn.co/image/ab67616d0000b273a88c34a27c333a01c31c65db",
     duration: "2:48",
   },
   {
     title: "abcdefu",
     description: "GAYLE",
     imageUrl:
-      "https://helpx.adobe.com/content/dam/help/en/photoshop/using/convert-color-image-black-white/jcr_content/main-pars/before_and_after/image-before/Landscape-Color.jpg",
-
+      "https://i.scdn.co/image/ab67616d0000b27372c86ba8a90df3d442c7a6b1",
     duration: "2:48",
   },
   {
     title: "abcdefu",
     description: "GAYLE",
     imageUrl:
-      "https://helpx.adobe.com/content/dam/help/en/photoshop/using/convert-color-image-black-white/jcr_content/main-pars/before_and_after/image-before/Landscape-Color.jpg",
-
+      "https://i.scdn.co/image/ab67616d0000b2739215cbd52b9f5a4f681115fa",
     duration: "2:48",
   },
   {
     title: "abcdefu",
     description: "GAYLE",
     imageUrl:
-      "https://helpx.adobe.com/content/dam/help/en/photoshop/using/convert-color-image-black-white/jcr_content/main-pars/before_and_after/image-before/Landscape-Color.jpg",
-
+      "https://i.scdn.co/image/ab67616d0000b273b2036554c8936a201cb19c88",
     duration: "2:48",
   },
   {
     title: "abcdefu",
     description: "GAYLE",
     imageUrl:
-      "https://helpx.adobe.com/content/dam/help/en/photoshop/using/convert-color-image-black-white/jcr_content/main-pars/before_and_after/image-before/Landscape-Color.jpg",
-
+      "https://i.scdn.co/image/ab67616d0000b273a88c34a27c333a01c31c65db",
     duration: "2:48",
   },
   {
     title: "abcdefu",
     description: "GAYLE",
     imageUrl:
-      "https://helpx.adobe.com/content/dam/help/en/photoshop/using/convert-color-image-black-white/jcr_content/main-pars/before_and_after/image-before/Landscape-Color.jpg",
-
+      "https://i.scdn.co/image/ab67616d0000b27372c86ba8a90df3d442c7a6b1",
     duration: "2:48",
   },
   {
     title: "abcdefu",
     description: "GAYLE",
     imageUrl:
-      "https://helpx.adobe.com/content/dam/help/en/photoshop/using/convert-color-image-black-white/jcr_content/main-pars/before_and_after/image-before/Landscape-Color.jpg",
-
+      "https://i.scdn.co/image/ab67616d0000b2739215cbd52b9f5a4f681115fa",
     duration: "2:48",
   },
   {
     title: "abcdefu",
     description: "GAYLE",
     imageUrl:
-      "https://helpx.adobe.com/content/dam/help/en/photoshop/using/convert-color-image-black-white/jcr_content/main-pars/before_and_after/image-before/Landscape-Color.jpg",
-
+      "https://i.scdn.co/image/ab67616d0000b273b2036554c8936a201cb19c88",
     duration: "2:48",
   },
   {
     title: "abcdefu",
     description: "GAYLE",
     imageUrl:
-      "https://helpx.adobe.com/content/dam/help/en/photoshop/using/convert-color-image-black-white/jcr_content/main-pars/before_and_after/image-before/Landscape-Color.jpg",
-
+      "https://i.scdn.co/image/ab67616d0000b273a88c34a27c333a01c31c65db",
     duration: "2:48",
   },
   {
     title: "abcdefu",
     description: "GAYLE",
     imageUrl:
-      "https://helpx.adobe.com/content/dam/help/en/photoshop/using/convert-color-image-black-white/jcr_content/main-pars/before_and_after/image-before/Landscape-Color.jpg",
-
+      "https://i.scdn.co/image/ab67616d0000b27372c86ba8a90df3d442c7a6b1",
     duration: "2:48",
   },
   {
     title: "abcdefu",
     description: "GAYLE",
     imageUrl:
-      "https://helpx.adobe.com/content/dam/help/en/photoshop/using/convert-color-image-black-white/jcr_content/main-pars/before_and_after/image-before/Landscape-Color.jpg",
-
+      "https://i.scdn.co/image/ab67616d0000b2739215cbd52b9f5a4f681115fa",
+    duration: "2:48",
+  },
+  {
+    title: "abcdefu",
+    description: "GAYLE",
+    imageUrl:
+      "https://i.scdn.co/image/ab67616d0000b273b2036554c8936a201cb19c88",
+    duration: "2:48",
+  },
+  {
+    title: "abcdefu",
+    description: "GAYLE",
+    imageUrl:
+      "https://i.scdn.co/image/ab67616d0000b273a88c34a27c333a01c31c65db",
+    duration: "2:48",
+  },
+  {
+    title: "abcdefu",
+    description: "GAYLE",
+    imageUrl:
+      "https://i.scdn.co/image/ab67616d0000b27372c86ba8a90df3d442c7a6b1",
+    duration: "2:48",
+  },
+  {
+    title: "abcdefu",
+    description: "GAYLE",
+    imageUrl:
+      "https://i.scdn.co/image/ab67616d0000b2739215cbd52b9f5a4f681115fa",
+    duration: "2:48",
+  },
+  {
+    title: "abcdefu",
+    description: "GAYLE",
+    imageUrl:
+      "https://i.scdn.co/image/ab67616d0000b273b2036554c8936a201cb19c88",
     duration: "2:48",
   },
 ];

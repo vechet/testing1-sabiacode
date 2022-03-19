@@ -1,11 +1,11 @@
-import Charts from "../../src/view/charts/index";
+import Playlists from "../../src/view/playlists/index";
 import Layout from "../../src/components/Layout/index";
 import React from "react";
 
 const Index = React.memo(() => {
   return (
     <Layout title="Charts">
-      <Charts />
+      <Playlists />
     </Layout>
   );
 });

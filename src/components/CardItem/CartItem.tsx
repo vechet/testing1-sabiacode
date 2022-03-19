@@ -39,14 +39,14 @@ const CardItem = React.memo((props: IProps) => {
 
 const StyledCard = styled(Card)`
   && {
-    min-width: 227px;
+    min-width: 24%;
     box-shadow: none;
     border-radius: 0px;
     .MuiCardContent-root {
       padding: 16px 0px;
     }
     .MuiCardMedia-root {
-      min-height: 227px;
+      min-height: 24%;
       border-radius: 5px;
     }
     .card-title {
@@ -55,6 +55,9 @@ const StyledCard = styled(Card)`
       color: #1d1b1a;
       margin-bottom: 2px;
       text-align: left;
+      :hover {
+        cursor: pointer;
+      }
     }
     .card-description {
       font-weight: 500;
@@ -62,6 +65,9 @@ const StyledCard = styled(Card)`
       color: #949494;
       word-break: break-word;
       text-align: left;
+      :hover {
+        cursor: pointer;
+      }
     }
   }
 `;

@@ -3,144 +3,126 @@ export const datas = [
     title: "Colors (Deluxe)",
     description: "YoungBoy Never Broke Again",
     imageUrl:
-      "https://i.scdn.co/image/ab67616d0000b273a88c34a27c333a01c31c65db",
+      "https://t.scdn.co/media/derived/toplists_11160599e6a04ac5d6f2757f5511778f_0_0_275_275.jpg",
   },
   {
     title: "Light Switch",
     description: "Charlie Puth",
-    imageUrl:
-      "https://i.scdn.co/image/ab67616d0000b27372c86ba8a90df3d442c7a6b1",
+    imageUrl: "https://t.scdn.co/images/8a0fabf4d537486e9b5a4623c921f77e.jpeg",
   },
   {
     title: "Country Stuff The Album",
     description: "Walker Hayes",
-    imageUrl:
-      "https://i.scdn.co/image/ab67616d0000b2739215cbd52b9f5a4f681115fa",
+    imageUrl: "https://t.scdn.co/images/11e89d14d7844b7eb3d26619cb662a9b.jpeg",
   },
   {
     title: "Watercolor Eyes (From “Euphoria” An HBO Original Series)",
     description: "Lana Del Rey",
-    imageUrl:
-      "https://i.scdn.co/image/ab67616d0000b273b2036554c8936a201cb19c88",
+    imageUrl: "https://t.scdn.co/images/2117dadfdd254825b3fbc52e3652ed56.jpeg",
   },
   {
     title: "Colors (Deluxe)",
     description: "YoungBoy Never Broke Again",
     imageUrl:
-      "https://i.scdn.co/image/ab67616d0000b273a88c34a27c333a01c31c65db",
+      "https://t.scdn.co/media/derived/toplists_11160599e6a04ac5d6f2757f5511778f_0_0_275_275.jpg",
   },
   {
     title: "Light Switch",
     description: "Charlie Puth",
-    imageUrl:
-      "https://i.scdn.co/image/ab67616d0000b27372c86ba8a90df3d442c7a6b1",
+    imageUrl: "https://t.scdn.co/images/8a0fabf4d537486e9b5a4623c921f77e.jpeg",
   },
   {
     title: "Country Stuff The Album",
     description: "Walker Hayes",
-    imageUrl:
-      "https://i.scdn.co/image/ab67616d0000b2739215cbd52b9f5a4f681115fa",
+    imageUrl: "https://t.scdn.co/images/11e89d14d7844b7eb3d26619cb662a9b.jpeg",
   },
   {
     title: "Watercolor Eyes (From “Euphoria” An HBO Original Series)",
     description: "Lana Del Rey",
-    imageUrl:
-      "https://i.scdn.co/image/ab67616d0000b273b2036554c8936a201cb19c88",
+    imageUrl: "https://t.scdn.co/images/2117dadfdd254825b3fbc52e3652ed56.jpeg",
   },
   {
     title: "Colors (Deluxe)",
     description: "YoungBoy Never Broke Again",
     imageUrl:
-      "https://i.scdn.co/image/ab67616d0000b273a88c34a27c333a01c31c65db",
+      "https://t.scdn.co/media/derived/toplists_11160599e6a04ac5d6f2757f5511778f_0_0_275_275.jpg",
   },
   {
     title: "Light Switch",
     description: "Charlie Puth",
-    imageUrl:
-      "https://i.scdn.co/image/ab67616d0000b27372c86ba8a90df3d442c7a6b1",
+    imageUrl: "https://t.scdn.co/images/8a0fabf4d537486e9b5a4623c921f77e.jpeg",
   },
   {
     title: "Country Stuff The Album",
     description: "Walker Hayes",
-    imageUrl:
-      "https://i.scdn.co/image/ab67616d0000b2739215cbd52b9f5a4f681115fa",
+    imageUrl: "https://t.scdn.co/images/11e89d14d7844b7eb3d26619cb662a9b.jpeg",
   },
   {
     title: "Watercolor Eyes (From “Euphoria” An HBO Original Series)",
     description: "Lana Del Rey",
-    imageUrl:
-      "https://i.scdn.co/image/ab67616d0000b273b2036554c8936a201cb19c88",
+    imageUrl: "https://t.scdn.co/images/2117dadfdd254825b3fbc52e3652ed56.jpeg",
   },
   {
     title: "Colors (Deluxe)",
     description: "YoungBoy Never Broke Again",
     imageUrl:
-      "https://i.scdn.co/image/ab67616d0000b273a88c34a27c333a01c31c65db",
+      "https://t.scdn.co/media/derived/toplists_11160599e6a04ac5d6f2757f5511778f_0_0_275_275.jpg",
   },
   {
     title: "Light Switch",
     description: "Charlie Puth",
-    imageUrl:
-      "https://i.scdn.co/image/ab67616d0000b27372c86ba8a90df3d442c7a6b1",
+    imageUrl: "https://t.scdn.co/images/8a0fabf4d537486e9b5a4623c921f77e.jpeg",
   },
   {
     title: "Country Stuff The Album",
     description: "Walker Hayes",
-    imageUrl:
-      "https://i.scdn.co/image/ab67616d0000b2739215cbd52b9f5a4f681115fa",
+    imageUrl: "https://t.scdn.co/images/11e89d14d7844b7eb3d26619cb662a9b.jpeg",
   },
   {
     title: "Watercolor Eyes (From “Euphoria” An HBO Original Series)",
     description: "Lana Del Rey",
-    imageUrl:
-      "https://i.scdn.co/image/ab67616d0000b273b2036554c8936a201cb19c88",
+    imageUrl: "https://t.scdn.co/images/2117dadfdd254825b3fbc52e3652ed56.jpeg",
   },
   {
     title: "Colors (Deluxe)",
     description: "YoungBoy Never Broke Again",
     imageUrl:
-      "https://i.scdn.co/image/ab67616d0000b273a88c34a27c333a01c31c65db",
+      "https://t.scdn.co/media/derived/toplists_11160599e6a04ac5d6f2757f5511778f_0_0_275_275.jpg",
   },
   {
     title: "Light Switch",
     description: "Charlie Puth",
-    imageUrl:
-      "https://i.scdn.co/image/ab67616d0000b27372c86ba8a90df3d442c7a6b1",
+    imageUrl: "https://t.scdn.co/images/8a0fabf4d537486e9b5a4623c921f77e.jpeg",
   },
   {
     title: "Country Stuff The Album",
     description: "Walker Hayes",
-    imageUrl:
-      "https://i.scdn.co/image/ab67616d0000b2739215cbd52b9f5a4f681115fa",
+    imageUrl: "https://t.scdn.co/images/11e89d14d7844b7eb3d26619cb662a9b.jpeg",
   },
   {
     title: "Watercolor Eyes (From “Euphoria” An HBO Original Series)",
     description: "Lana Del Rey",
-    imageUrl:
-      "https://i.scdn.co/image/ab67616d0000b273b2036554c8936a201cb19c88",
+    imageUrl: "https://t.scdn.co/images/2117dadfdd254825b3fbc52e3652ed56.jpeg",
   },
   {
     title: "Colors (Deluxe)",
     description: "YoungBoy Never Broke Again",
     imageUrl:
-      "https://i.scdn.co/image/ab67616d0000b273a88c34a27c333a01c31c65db",
+      "https://t.scdn.co/media/derived/toplists_11160599e6a04ac5d6f2757f5511778f_0_0_275_275.jpg",
   },
   {
     title: "Light Switch",
     description: "Charlie Puth",
-    imageUrl:
-      "https://i.scdn.co/image/ab67616d0000b27372c86ba8a90df3d442c7a6b1",
+    imageUrl: "https://t.scdn.co/images/8a0fabf4d537486e9b5a4623c921f77e.jpeg",
   },
   {
     title: "Country Stuff The Album",
     description: "Walker Hayes",
-    imageUrl:
-      "https://i.scdn.co/image/ab67616d0000b2739215cbd52b9f5a4f681115fa",
+    imageUrl: "https://t.scdn.co/images/11e89d14d7844b7eb3d26619cb662a9b.jpeg",
   },
   {
     title: "Watercolor Eyes (From “Euphoria” An HBO Original Series)",
     description: "Lana Del Rey",
-    imageUrl:
-      "https://i.scdn.co/image/ab67616d0000b273b2036554c8936a201cb19c88",
+    imageUrl: "https://t.scdn.co/images/2117dadfdd254825b3fbc52e3652ed56.jpeg",
   },
 ];

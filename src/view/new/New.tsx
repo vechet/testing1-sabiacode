@@ -33,10 +33,5 @@ const StyledWrapper = styled(Stack)`
     color: #1d1b1a;
     margin-bottom: 30px;
   }
-  /* && {
-    overflow-y: auto;
-    max-height: calc(100vh - 240px);
-    min-height: calc(100vh - 240px);
-  } */
 `;
 export default New;

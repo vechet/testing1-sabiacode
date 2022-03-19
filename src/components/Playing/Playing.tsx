@@ -9,20 +9,31 @@ import VolumeUpIcon from "@mui/icons-material/VolumeUp";
 import LoopIcon from "@mui/icons-material/Loop";
 import FavoriteBorderIcon from "@mui/icons-material/FavoriteBorder";
 import FavoriteIcon from "@mui/icons-material/Favorite";
-// import { useAppSelector, useAppDispatch } from "@redux";
-
-// import {
-//   selectPlayer,
-//   setpauseTrack,
-//   setplayTrack,
-// } from "@redux/reducers/playerSlice";
+import { useDispatch, useSelector } from "react-redux";
+import {
+  selectPlayer,
+  setpauseTrack,
+  setplayTrack,
+  setFavorite,
+  setRemoveFavorite,
+  setRemovePlayRepeat,
+  setPlayRepeat,
+} from "../../../@redux/reducers/playerSlice";
 
 const Playing = React.memo(() => {
-  // const dispatch = useAppDispatch();
-  // const player = useAppSelector(selectPlayer);
-  // console.log("player:::", player); // true or fasle
+  const dispatch = useDispatch();
+  const player = useSelector(selectPlayer);
+  const { playing, favorite, playRepeat } = player;
+
   const handlePlay = () => {
-    // dispatch(player ? setpauseTrack() : setplayTrack());
+    dispatch(playing ? setpauseTrack() : setplayTrack());
+  };
+
+  const handleFavorite = () => {
+    dispatch(favorite ? setRemoveFavorite() : setFavorite());
+  };
+  const handlePalyRepeat = () => {
+    dispatch(playRepeat ? setRemovePlayRepeat() : setPlayRepeat());
   };
 
   return (
@@ -32,8 +43,7 @@ const Playing = React.memo(() => {
           <SkipPreviousIcon />
         </IconButton>
         <StyledPlay onClick={handlePlay}>
-          {/* {player ? <PauseIcon /> : <PlayArrowIcon />} */}
-          <PlayArrowIcon />
+          {playing ? <PauseIcon /> : <PlayArrowIcon />}
         </StyledPlay>
         <IconButton>
           <SkipNextIcon />
@@ -48,11 +58,13 @@ const Playing = React.memo(() => {
         <IconButton>
           <VolumeUpIcon />
         </IconButton>
-        <IconButton>
-          <FavoriteBorderIcon />
+        <IconButton onClick={handleFavorite}>
+          {favorite ? <FavoriteIcon /> : <FavoriteBorderIcon />}
         </IconButton>
-        <IconButton>
-          <LoopIcon />
+        <IconButton onClick={handlePalyRepeat}>
+          <LoopIcon
+            className={playRepeat ? "loop-icon-black" : "loop-icon-normal"}
+          />
         </IconButton>
       </Stack>
     </StyledWrapper>
@@ -71,6 +83,12 @@ const StyledWrapper = styled(Stack)`
     height: var(--playing_h);
     padding: 20px 35px;
     box-shadow: 10px -6px 15px 0 rgb(168 179 211 / 24%);
+    .loop-icon-black {
+      color: #1d1b1a;
+    }
+    .loop-icon-normal {
+      color: #7d7d7d;
+    }
   }
 `;
 const StyledPlay = styled(IconButton)`

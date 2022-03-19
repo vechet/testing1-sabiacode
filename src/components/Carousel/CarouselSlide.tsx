@@ -43,7 +43,7 @@ const CarouselSlide = React.memo((props: IProps) => {
         infiniteLoop={true}
       >
         <div>
-          <Stack direction="row" alignItems="start" spacing={2.2} mr={2}>
+          <Stack direction="row" alignItems="start" spacing={2.2} mr={4}>
             {slideDatas.map((data: any, index: number) => {
               return (
                 <CardItem
