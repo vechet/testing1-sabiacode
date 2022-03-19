@@ -4,9 +4,9 @@ import React from "react";
 import { Carousel } from "react-responsive-carousel";
 import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader
 import styled from "styled-components";
+import { datas } from "../../view/home/components/utils";
 import CardItem from "../CardItem";
 import SeeAllButton from "../SeeAllButton";
-import { datas } from "./utils";
 
 interface IProps {
   topTitle: any;
@@ -31,7 +31,7 @@ const CarouselSlide = React.memo((props: IProps) => {
         <Typography className="description">{topDescription}</Typography>
         {showSeeMoreBtn && <SeeAllButton pageName={pageName} />}
       </Stack>
-      <StyledCarousel
+      <Carousel
         showArrows={false}
         showIndicators={true}
         showThumbs={false}
@@ -40,9 +40,10 @@ const CarouselSlide = React.memo((props: IProps) => {
         showStatus={false}
         emulateTouch={true}
         interval={6000}
+        infiniteLoop={true}
       >
-        <div style={{ height: "100%" }}>
-          <Stack direction="row" alignItems="start" spacing={2.2}>
+        <div>
+          <Stack direction="row" alignItems="start" spacing={2.2} mr={2}>
             {datas.map((data: any, index: number) => {
               return (
                 <CardItem
@@ -56,7 +57,7 @@ const CarouselSlide = React.memo((props: IProps) => {
           </Stack>
         </div>
         <div>
-          <Stack direction="row" alignItems="start" spacing={2.2}>
+          <Stack direction="row" alignItems="start" spacing={2.2} mr={2}>
             {datas.map((data: any, index: number) => {
               return (
                 <CardItem
@@ -69,49 +70,7 @@ const CarouselSlide = React.memo((props: IProps) => {
             })}
           </Stack>
         </div>
-        <div>
-          <Stack direction="row" alignItems="start" spacing={2.2}>
-            {datas.map((data: any, index: number) => {
-              return (
-                <CardItem
-                  key={index}
-                  title={data.title}
-                  description={data.description}
-                  imageUrl={data.imageUrl}
-                />
-              );
-            })}
-          </Stack>
-        </div>
-        <div>
-          <Stack direction="row" alignItems="start" spacing={2.2}>
-            {datas.map((data: any, index: number) => {
-              return (
-                <CardItem
-                  key={index}
-                  title={data.title}
-                  description={data.description}
-                  imageUrl={data.imageUrl}
-                />
-              );
-            })}
-          </Stack>
-        </div>
-        <div>
-          <Stack direction="row" alignItems="start" spacing={2.2}>
-            {datas.map((data: any, index: number) => {
-              return (
-                <CardItem
-                  key={index}
-                  title={data.title}
-                  description={data.description}
-                  imageUrl={data.imageUrl}
-                />
-              );
-            })}
-          </Stack>
-        </div>
-      </StyledCarousel>
+      </Carousel>
     </StyledWrapper>
   );
 });
@@ -127,17 +86,20 @@ const StyledWrapper = styled(Stack)`
     font-size: 25px;
     color: #1d1b1a;
   }
-`;
-
-const StyledCarousel = styled(Carousel)`
   .carousel .slider-wrapper {
     height: 360px;
   }
   .carousel .control-dots .dot {
-    /* box-shadow: none;
     width: 5px;
     height: 5px;
-    margin: 0px 13px; */
+    box-shadow: none;
+    background-color: gray;
+  }
+  .carousel .control-dots .dot.selected {
+    width: 5px;
+    height: 5px;
+    background-color: #000 !important;
+    box-shadow: none;
   }
 `;
 
