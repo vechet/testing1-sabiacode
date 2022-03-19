@@ -16,13 +16,7 @@ const CardItem = React.memo((props: IProps) => {
 
   return (
     <StyledCard>
-      <CardMedia
-        component="img"
-        width="227"
-        height="227"
-        image={imageUrl}
-        alt="green iguana"
-      />
+      <CardMedia component="img" image={imageUrl} alt="green iguana" />
       <CardContent>
         <Typography
           variant="body1"
@@ -45,30 +39,29 @@ const CardItem = React.memo((props: IProps) => {
 
 const StyledCard = styled(Card)`
   && {
+    min-width: 227px;
     box-shadow: none;
     border-radius: 0px;
-  }
-  && .MuiCardContent-root {
-    padding: 16px 0px;
-  }
-
-  && .MuiCardMedia-root {
-    border-radius: 5px;
-  }
-
-  .card-title {
-    font-size: 14px;
-    font-weight: 500;
-    color: #1d1b1a;
-    margin-bottom: 2px;
-    text-align: left;
-  }
-  .card-description {
-    font-weight: 500;
-    font-size: 13px;
-    color: #949494;
-    word-break: break-word;
-    text-align: left;
+    .MuiCardContent-root {
+      padding: 16px 0px;
+    }
+    .MuiCardMedia-root {
+      border-radius: 5px;
+    }
+    .card-title {
+      font-size: 14px;
+      font-weight: 500;
+      color: #1d1b1a;
+      margin-bottom: 2px;
+      text-align: left;
+    }
+    .card-description {
+      font-weight: 500;
+      font-size: 13px;
+      color: #949494;
+      word-break: break-word;
+      text-align: left;
+    }
   }
 `;
 export default CardItem;

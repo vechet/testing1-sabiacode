@@ -4,7 +4,7 @@ import React from "react";
 import { Carousel } from "react-responsive-carousel";
 import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader
 import styled from "styled-components";
-import { datas } from "../../view/home/components/utils";
+import { slideDatas } from "../../view/home/components/utils";
 import CardItem from "../CardItem";
 import SeeAllButton from "../SeeAllButton";
 
@@ -44,7 +44,7 @@ const CarouselSlide = React.memo((props: IProps) => {
       >
         <div>
           <Stack direction="row" alignItems="start" spacing={2.2} mr={2}>
-            {datas.map((data: any, index: number) => {
+            {slideDatas.map((data: any, index: number) => {
               return (
                 <CardItem
                   key={index}
@@ -58,7 +58,7 @@ const CarouselSlide = React.memo((props: IProps) => {
         </div>
         <div>
           <Stack direction="row" alignItems="start" spacing={2.2} mr={2}>
-            {datas.map((data: any, index: number) => {
+            {slideDatas.map((data: any, index: number) => {
               return (
                 <CardItem
                   key={index}

@@ -1,10 +1,10 @@
 import { Typography, Stack, IconButton } from "@mui/material";
 import React from "react";
 import styled from "styled-components";
-import { datas } from "./utils";
 import FavoriteIcon from "@mui/icons-material/Favorite";
 import AddIcon from "@mui/icons-material/Add";
 import FavoriteBorderIcon from "@mui/icons-material/FavoriteBorder";
+import { listDatas } from "../../view/home/components/utils";
 
 interface IProps {
   topTitle: any;
@@ -28,7 +28,7 @@ const Listing = React.memo((props: IProps) => {
         <Typography className="description">{topDescription}</Typography>
       </Stack>
       <StyledList>
-        {datas.map((data, index) => {
+        {listDatas.map((data, index) => {
           return (
             <StyledItem
               key={index}
