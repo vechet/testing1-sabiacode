@@ -13,8 +13,8 @@ const HotTrack = React.memo(() => {
 
 const StyledWrapper = styled(Stack)`
   .list-item {
-    max-height: calc(100vh - 180px);
-    min-height: calc(100vh - 180px);
+    max-height: calc(100vh - 240px);
+    min-height: calc(100vh - 240px);
     overflow: auto;
   }
 `;

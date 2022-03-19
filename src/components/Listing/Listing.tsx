@@ -38,7 +38,7 @@ const Listing = React.memo((props: IProps) => {
   };
 
   return (
-    <StyledWrapper className="list-item">
+    <StyledWrapper>
       <Typography className="title">{topTitle}</Typography>
       <Stack
         direction="row"
@@ -49,7 +49,7 @@ const Listing = React.memo((props: IProps) => {
       >
         <Typography className="description">{topDescription}</Typography>
       </Stack>
-      <StyledList>
+      <StyledList className="list-item" pr={3}>
         {listDatas.map((data, index) => {
           return (
             <StyledItem
