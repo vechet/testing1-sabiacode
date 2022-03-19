@@ -7,7 +7,7 @@ import { datas } from "./components/utils";
 const Genres = React.memo(() => {
   return (
     <StyledWrapper>
-      <Typography className="description">{`Genres & Moods`}</Typography>
+      <div className="description">{`Genres & Moods`}</div>
       <Grid container spacing={2.5}>
         {datas.map((data, index) => {
           return (

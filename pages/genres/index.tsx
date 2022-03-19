@@ -4,7 +4,7 @@ import React from "react";
 
 const Index = React.memo(() => {
   return (
-    <Layout title="Charts">
+    <Layout title="Genres">
       <Genres />
     </Layout>
   );

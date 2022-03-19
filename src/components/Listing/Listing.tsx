@@ -42,7 +42,7 @@ const Listing = React.memo((props: IProps) => {
   };
 
   return (
-    <StyledWrapper>
+    <StyledWrapper className="list-item">
       <Typography className="title">{topTitle}</Typography>
       <Stack
         direction="row"
