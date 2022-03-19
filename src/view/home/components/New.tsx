@@ -1,6 +1,6 @@
 import { Stack } from "@mui/material";
 import React from "react";
-import CarouselSlide from "../Carousel";
+import CarouselSlide from "../../../components/Carousel";
 
 const New = React.memo(() => {
   return (

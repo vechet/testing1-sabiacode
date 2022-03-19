@@ -6,6 +6,7 @@ import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a lo
 import styled from "styled-components";
 import CardItem from "../CardItem";
 import SeeAllButton from "../SeeAllButton";
+import { datas } from "./utils";
 
 interface IProps {
   topTitle: any;
@@ -16,33 +17,6 @@ interface IProps {
 
 const CarouselSlide = React.memo((props: IProps) => {
   const { topTitle, topDescription, showSeeMoreBtn, pageName } = props;
-
-  const datas = [
-    {
-      title: "Colors (Deluxe)",
-      description: "YoungBoy Never Broke Again",
-      imageUrl:
-        "https://helpx.adobe.com/content/dam/help/en/photoshop/using/convert-color-image-black-white/jcr_content/main-pars/before_and_after/image-before/Landscape-Color.jpg",
-    },
-    {
-      title: "Light Switch",
-      description: "Charlie Puth",
-      imageUrl:
-        "https://helpx.adobe.com/content/dam/help/en/photoshop/using/convert-color-image-black-white/jcr_content/main-pars/before_and_after/image-before/Landscape-Color.jpg",
-    },
-    {
-      title: "Country Stuff The Album",
-      description: "Walker Hayes",
-      imageUrl:
-        "https://helpx.adobe.com/content/dam/help/en/photoshop/using/convert-color-image-black-white/jcr_content/main-pars/before_and_after/image-before/Landscape-Color.jpg",
-    },
-    {
-      title: "Watercolor Eyes (From “Euphoria” An HBO Original Series)",
-      description: "Lana Del Rey",
-      imageUrl:
-        "https://helpx.adobe.com/content/dam/help/en/photoshop/using/convert-color-image-black-white/jcr_content/main-pars/before_and_after/image-before/Landscape-Color.jpg",
-    },
-  ];
 
   return (
     <StyledWrapper>
@@ -69,9 +43,10 @@ const CarouselSlide = React.memo((props: IProps) => {
       >
         <div style={{ height: "100%" }}>
           <Stack direction="row" alignItems="start" spacing={2.2}>
-            {datas.map((data) => {
+            {datas.map((data: any, index: number) => {
               return (
                 <CardItem
+                  key={index}
                   title={data.title}
                   description={data.description}
                   imageUrl={data.imageUrl}
@@ -82,9 +57,10 @@ const CarouselSlide = React.memo((props: IProps) => {
         </div>
         <div>
           <Stack direction="row" alignItems="start" spacing={2.2}>
-            {datas.map((data) => {
+            {datas.map((data: any, index: number) => {
               return (
                 <CardItem
+                  key={index}
                   title={data.title}
                   description={data.description}
                   imageUrl={data.imageUrl}
@@ -95,9 +71,10 @@ const CarouselSlide = React.memo((props: IProps) => {
         </div>
         <div>
           <Stack direction="row" alignItems="start" spacing={2.2}>
-            {datas.map((data) => {
+            {datas.map((data: any, index: number) => {
               return (
                 <CardItem
+                  key={index}
                   title={data.title}
                   description={data.description}
                   imageUrl={data.imageUrl}
@@ -108,9 +85,10 @@ const CarouselSlide = React.memo((props: IProps) => {
         </div>
         <div>
           <Stack direction="row" alignItems="start" spacing={2.2}>
-            {datas.map((data) => {
+            {datas.map((data: any, index: number) => {
               return (
                 <CardItem
+                  key={index}
                   title={data.title}
                   description={data.description}
                   imageUrl={data.imageUrl}
@@ -121,9 +99,10 @@ const CarouselSlide = React.memo((props: IProps) => {
         </div>
         <div>
           <Stack direction="row" alignItems="start" spacing={2.2}>
-            {datas.map((data) => {
+            {datas.map((data: any, index: number) => {
               return (
                 <CardItem
+                  key={index}
                   title={data.title}
                   description={data.description}
                   imageUrl={data.imageUrl}
@@ -155,10 +134,10 @@ const StyledCarousel = styled(Carousel)`
     height: 360px;
   }
   .carousel .control-dots .dot {
-    box-shadow: none;
+    /* box-shadow: none;
     width: 5px;
     height: 5px;
-    margin: 0px 13px;
+    margin: 0px 13px; */
   }
 `;
 

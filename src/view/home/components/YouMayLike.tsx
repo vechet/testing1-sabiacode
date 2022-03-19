@@ -1,5 +1,5 @@
 import React from "react";
-import CarouselSlide from "../Carousel";
+import CarouselSlide from "../../../components/Carousel";
 
 const YouMayLike = React.memo(() => {
   return (

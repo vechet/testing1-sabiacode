@@ -1,102 +1,70 @@
-import { ListItemIcon, Typography } from "@mui/material";
-import Drawer from "@mui/material/Drawer";
-import List from "@mui/material/List";
-import ListItem from "@mui/material/ListItem";
-import ListItemText from "@mui/material/ListItemText";
+import { Drawer, Typography, Stack } from "@mui/material";
 import { useRouter } from "next/router";
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import styled from "styled-components";
-import { MENUS_ONE, MENUS_TWO } from "./utils";
+import { MENUS } from "./utils";
 import HeaderDrawer from "./HeaderDrawer";
 
 const SideBar = React.memo(() => {
-  const [selected, setSelected] = useState("");
+  const [selected, setSelected] = useState("/home");
   const router = useRouter();
+  const { pathname } = router;
 
   const handleClick = (page: string) => {
-    setSelected(page);
     router.push(page);
   };
+
+  useEffect(() => {
+    setSelected(pathname);
+  }, []);
 
   return (
     <>
       <Drawer variant="persistent" anchor="left" open={true}>
         <HeaderDrawer />
-        <StyledWrapper>
-          <StyledList>
-            {MENUS_ONE.map((menu, index) => (
-              <ListItem
-                button
-                key={index}
+        <Stack>
+          {MENUS.map((menu, index) => (
+            <React.Fragment key={index}>
+              {index === 4 && (
+                <Stack py={2} px={4}>
+                  <StyledTypography>YOUR LIBRARY</StyledTypography>
+                </Stack>
+              )}
+              <StyledMenu
+                px={4}
+                direction="row"
+                alignItems="center"
+                spacing={1}
                 onClick={() => handleClick(menu.value)}
                 selected={menu.value === selected}
               >
-                <StyledListItemIcon
-                  style={{
-                    color: menu.value === selected ? "#1d1b1a" : "#949494",
-                  }}
-                >
-                  {menu.icon}
-                </StyledListItemIcon>
-                <ListItemText
-                  style={{
-                    color: menu.value === selected ? "#1d1b1a" : "#949494",
-                  }}
-                  primary={menu.label}
-                />
-              </ListItem>
-            ))}
-
-            <StyledTypography>YOUR LIBRARY</StyledTypography>
-
-            {MENUS_TWO.map((menu, index) => (
-              <ListItem
-                button
-                key={index}
-                onClick={() => handleClick(menu.value)}
-                selected={menu.value === selected}
-              >
-                <StyledListItemIcon
-                  style={{
-                    color: menu.value === selected ? "#1d1b1a" : "#949494",
-                  }}
-                >
-                  {menu.icon}
-                </StyledListItemIcon>
-                <ListItemText
-                  style={{
-                    color: menu.value === selected ? "#1d1b1a" : "#949494",
-                  }}
-                  primary={menu.label}
-                />
-              </ListItem>
-            ))}
-          </StyledList>
-        </StyledWrapper>
+                {menu.icon}
+                <Typography className="menu">{menu.label}</Typography>
+              </StyledMenu>
+            </React.Fragment>
+          ))}
+        </Stack>
       </Drawer>
     </>
   );
 });
 
-const StyledWrapper = styled.div`
-  width: 292px;
-  border-right: 1px solid #efefef;
-`;
-
-const StyledList = styled(List)`
-  padding: 0px 16px 16px 16px;
-  color: #949494;
-`;
-
-const StyledListItemIcon = styled(ListItemIcon)`
-  min-width: 35px;
-  color: #949494;
+const StyledMenu: any = styled(Stack)`
+  min-width: 290px;
+  height: 50px;
+  color: ${(props) => (props.selected ? "#1d1b1a" : "#949494")};
+  &:hover {
+    cursor: pointer;
+  }
+  .menu {
+    font-weight: 500;
+  }
 `;
 
 const StyledTypography = styled(Typography)`
   font-weight: 600;
-  font-size: 13px;
-  padding: 24px 16px;
+  color: #949494;
+  font-size: 14px;
 `;
 
 export default SideBar;

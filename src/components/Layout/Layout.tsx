@@ -1,6 +1,7 @@
 import React from "react";
 import Head from "next/head";
 import SideBar from "./SideBar";
+import Playing from "../Playing";
 
 interface IProps {
   children: any;
@@ -19,6 +20,7 @@ const Layout = React.memo(({ children, title }: IProps) => {
       <div style={{ marginLeft: "292px", padding: "40px 80px 140px" }}>
         {children}
       </div>
+      <Playing />
     </>
   );
 });

@@ -1,6 +1,10 @@
-import { Typography, Stack } from "@mui/material";
+import { Typography, Stack, IconButton } from "@mui/material";
 import React from "react";
 import styled from "styled-components";
+import { datas } from "./utils";
+import FavoriteIcon from "@mui/icons-material/Favorite";
+import AddIcon from "@mui/icons-material/Add";
+import FavoriteBorderIcon from "@mui/icons-material/FavoriteBorder";
 
 interface IProps {
   topTitle: any;
@@ -10,129 +14,6 @@ interface IProps {
 
 const Listing = React.memo((props: IProps) => {
   const { topTitle, topDescription, showSeeMoreBtn } = props;
-
-  const datas = [
-    {
-      title: "abcdefu",
-      description: "GAYLE",
-      imageUrl:
-        "https://helpx.adobe.com/content/dam/help/en/photoshop/using/convert-color-image-black-white/jcr_content/main-pars/before_and_after/image-before/Landscape-Color.jpg",
-
-      duration: "2:48",
-    },
-    {
-      title: "abcdefu",
-      description: "GAYLE",
-      imageUrl:
-        "https://helpx.adobe.com/content/dam/help/en/photoshop/using/convert-color-image-black-white/jcr_content/main-pars/before_and_after/image-before/Landscape-Color.jpg",
-
-      duration: "2:48",
-    },
-    {
-      title: "abcdefu",
-      description: "GAYLE",
-      imageUrl:
-        "https://helpx.adobe.com/content/dam/help/en/photoshop/using/convert-color-image-black-white/jcr_content/main-pars/before_and_after/image-before/Landscape-Color.jpg",
-
-      duration: "2:48",
-    },
-    {
-      title: "abcdefu",
-      description: "GAYLE",
-      imageUrl:
-        "https://helpx.adobe.com/content/dam/help/en/photoshop/using/convert-color-image-black-white/jcr_content/main-pars/before_and_after/image-before/Landscape-Color.jpg",
-
-      duration: "2:48",
-    },
-    {
-      title: "abcdefu",
-      description: "GAYLE",
-      imageUrl:
-        "https://helpx.adobe.com/content/dam/help/en/photoshop/using/convert-color-image-black-white/jcr_content/main-pars/before_and_after/image-before/Landscape-Color.jpg",
-
-      duration: "2:48",
-    },
-    {
-      title: "abcdefu",
-      description: "GAYLE",
-      imageUrl:
-        "https://helpx.adobe.com/content/dam/help/en/photoshop/using/convert-color-image-black-white/jcr_content/main-pars/before_and_after/image-before/Landscape-Color.jpg",
-
-      duration: "2:48",
-    },
-    {
-      title: "abcdefu",
-      description: "GAYLE",
-      imageUrl:
-        "https://helpx.adobe.com/content/dam/help/en/photoshop/using/convert-color-image-black-white/jcr_content/main-pars/before_and_after/image-before/Landscape-Color.jpg",
-
-      duration: "2:48",
-    },
-    {
-      title: "abcdefu",
-      description: "GAYLE",
-      imageUrl:
-        "https://helpx.adobe.com/content/dam/help/en/photoshop/using/convert-color-image-black-white/jcr_content/main-pars/before_and_after/image-before/Landscape-Color.jpg",
-
-      duration: "2:48",
-    },
-    {
-      title: "abcdefu",
-      description: "GAYLE",
-      imageUrl:
-        "https://helpx.adobe.com/content/dam/help/en/photoshop/using/convert-color-image-black-white/jcr_content/main-pars/before_and_after/image-before/Landscape-Color.jpg",
-
-      duration: "2:48",
-    },
-    {
-      title: "abcdefu",
-      description: "GAYLE",
-      imageUrl:
-        "https://helpx.adobe.com/content/dam/help/en/photoshop/using/convert-color-image-black-white/jcr_content/main-pars/before_and_after/image-before/Landscape-Color.jpg",
-
-      duration: "2:48",
-    },
-    {
-      title: "abcdefu",
-      description: "GAYLE",
-      imageUrl:
-        "https://helpx.adobe.com/content/dam/help/en/photoshop/using/convert-color-image-black-white/jcr_content/main-pars/before_and_after/image-before/Landscape-Color.jpg",
-
-      duration: "2:48",
-    },
-    {
-      title: "abcdefu",
-      description: "GAYLE",
-      imageUrl:
-        "https://helpx.adobe.com/content/dam/help/en/photoshop/using/convert-color-image-black-white/jcr_content/main-pars/before_and_after/image-before/Landscape-Color.jpg",
-
-      duration: "2:48",
-    },
-    {
-      title: "abcdefu",
-      description: "GAYLE",
-      imageUrl:
-        "https://helpx.adobe.com/content/dam/help/en/photoshop/using/convert-color-image-black-white/jcr_content/main-pars/before_and_after/image-before/Landscape-Color.jpg",
-
-      duration: "2:48",
-    },
-    {
-      title: "abcdefu",
-      description: "GAYLE",
-      imageUrl:
-        "https://helpx.adobe.com/content/dam/help/en/photoshop/using/convert-color-image-black-white/jcr_content/main-pars/before_and_after/image-before/Landscape-Color.jpg",
-
-      duration: "2:48",
-    },
-    {
-      title: "abcdefu",
-      description: "GAYLE",
-      imageUrl:
-        "https://helpx.adobe.com/content/dam/help/en/photoshop/using/convert-color-image-black-white/jcr_content/main-pars/before_and_after/image-before/Landscape-Color.jpg",
-
-      duration: "2:48",
-    },
-  ];
 
   return (
     <StyledWrapper>
@@ -149,7 +30,7 @@ const Listing = React.memo((props: IProps) => {
       <StyledList>
         {datas.map((data, index) => {
           return (
-            <Stack
+            <StyledItem
               key={index}
               direction="row"
               justifyContent="space-between"
@@ -170,7 +51,15 @@ const Listing = React.memo((props: IProps) => {
                 </div>
               </Stack>
               <Typography className="card-duration">{data.duration}</Typography>
-            </Stack>
+              <Stack className="icon-right" direction="row">
+                <IconButton size="small">
+                  <AddIcon />
+                </IconButton>
+                <IconButton size="small">
+                  <FavoriteBorderIcon />
+                </IconButton>
+              </Stack>
+            </StyledItem>
           );
         })}
       </StyledList>
@@ -195,8 +84,8 @@ const StyledWrapper = styled(Stack)`
 const StyledList = styled(Stack)`
   && {
     overflow-y: auto;
-    max-height: calc(100vh - 240px);
-    min-height: calc(100vh - 240px);
+    max-height: calc(100vh - 200px);
+    min-height: calc(100vh - 200px);
     padding-right: 20px;
   }
   .card {
@@ -223,6 +112,20 @@ const StyledList = styled(Stack)`
   .card-duration {
     color: #949494;
     font-size: 14px;
+  }
+`;
+
+const StyledItem = styled(Stack)`
+  .icon-right {
+    display: none;
+  }
+  &:hover {
+    .card-duration {
+      display: none;
+    }
+    .icon-right {
+      display: block;
+    }
   }
 `;
 

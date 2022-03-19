@@ -1,7 +1,7 @@
 import { Typography, Stack, styled } from "@mui/material";
 import React from "react";
-import GridListing from "../GridListing";
-import SeeAllButton from "../SeeAllButton";
+import GridListing from "../../../components/GridListing";
+import SeeAllButton from "../../../components/SeeAllButton";
 
 const Discover = React.memo(() => {
   return (
