@@ -2,7 +2,7 @@
 module.exports = {
   reactStrictMode: true,
   images: {
-    domains: ["i.scdn.co", "images.unsplash.com"],
+    domains: ["i.scdn.co", "images.unsplash.com", "t.scdn.co"],
     formats: ["image/webp"],
   },
 };
