@@ -36,7 +36,7 @@ const SideBar = React.memo(() => {
                 alignItems="center"
                 spacing={1}
                 onClick={() => handleClick(menu.value)}
-                selected={menu.value === selected}
+                sx={{ color: menu.value === selected ? "#1d1b1a" : "#949494" }}
               >
                 {menu.icon}
                 <Typography className="menu">{menu.label}</Typography>
@@ -49,10 +49,9 @@ const SideBar = React.memo(() => {
   );
 });
 
-const StyledMenu: any = styled(Stack)`
+const StyledMenu = styled(Stack)`
   min-width: 290px;
   height: 50px;
-  color: ${(props) => (props.selected ? "#1d1b1a" : "#949494")};
   &:hover {
     cursor: pointer;
   }
