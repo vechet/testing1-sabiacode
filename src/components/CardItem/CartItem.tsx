@@ -46,6 +46,7 @@ const StyledCard = styled(Card)`
       padding: 16px 0px;
     }
     .MuiCardMedia-root {
+      min-height: 227px;
       border-radius: 5px;
     }
     .card-title {
