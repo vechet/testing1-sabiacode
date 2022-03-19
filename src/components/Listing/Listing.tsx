@@ -29,10 +29,6 @@ const Listing = React.memo((props: IProps) => {
   const player = useSelector(selectPlayer);
   const { playing, favorite } = player;
 
-  const handlePlaySong = () => {
-    dispatch(setplayTrack());
-  };
-
   const handlePlay = () => {
     dispatch(playing ? setpauseTrack() : setplayTrack());
   };
@@ -70,7 +66,11 @@ const Listing = React.memo((props: IProps) => {
                     height="60"
                     className="image"
                   />
-                  <IconButton disableRipple={true} className="btn-play-icon">
+                  <IconButton
+                    disableRipple={true}
+                    className="btn-play-icon"
+                    onClick={() => handlePlay()}
+                  >
                     {playing ? (
                       <PauseIcon className="play-icon" />
                     ) : (
@@ -93,7 +93,7 @@ const Listing = React.memo((props: IProps) => {
               </Stack>
               <Typography className="card-duration">{data.duration}</Typography>
               <Stack className="icon-right" direction="row">
-                <IconButton size="small" onClick={() => handlePlaySong()}>
+                <IconButton size="small">
                   <AddIcon />
                 </IconButton>
                 <IconButton size="small" onClick={handleFavorite}>

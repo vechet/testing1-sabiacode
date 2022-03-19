@@ -15,7 +15,7 @@ const Discover = React.memo(() => {
         pb={4}
       >
         <Typography className="description">{`Genres & Moods`}</Typography>
-        <SeeAllButton pageName={"News"} />
+        <SeeAllButton pageName={"genres"} />
       </Stack>
       <GridListing />
     </StyledWrapper>
